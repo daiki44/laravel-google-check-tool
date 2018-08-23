@@ -8,30 +8,27 @@
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
 </head>
-<body style="padding-top: 16px;">
-<div class="container">
+<body>
+<nav class="navbar navbar-light bg-light">
+    <span class="navbar-brand mb-0 h1">Google検索順位チェックツールβ</span>
+    <a href="https://github.com/daiki44/laravel-google-check-tool" target="_blank">Github</a>
+</nav>
+<div class="container" style="padding-top:24px;">
     <div class="row">
         <div class="col-12">
-            <div class="card">
-                <div class="card-header">
-                    Google検索順位チェックツール
+            <form action="#" method="GET">
+                <div class="form-group">
+                    <label for="your-domain">サイトドメイン</label>
+                    <input type="text" class="form-control" id="your-domain" name="your_domain" aria-describedby="domain-help" placeholder="あなたのサイトドメインを入力してください">
+                    <small id="domain-help" class="form-text text-muted">※プロトコル(http/https)は入力しないでください</small>
                 </div>
-                <div class="card-body">
-                    <form action="#" method="GET">
-                        <div class="form-group">
-                            <label for="your-domain">サイトドメイン</label>
-                            <input type="text" class="form-control" id="your-domain" name="your_domain" aria-describedby="domain-help" placeholder="あなたのサイトドメインを入力してください">
-                            <small id="domain-help" class="form-text text-muted">※プロトコル(http/https)は入力しないでください</small>
-                        </div>
-                        <div class="form-group">
-                            <label for="your-domain">キーワード</label>
-                            <input type="text" class="form-control" id="keyword" name="keyword" aria-describedby="domain-help" placeholder="キーワードを入力してください">
-                            <small id="keyword-help" class="form-text text-muted">※複数ワードの場合は半角スペース区切りで入力してください</small>
-                        </div>
-                        <button type="button" class="btn btn-primary" onclick="requestSearch(); return false;">送信</button>
-                    </form>
+                <div class="form-group">
+                    <label for="your-domain">キーワード</label>
+                    <input type="text" class="form-control" id="keyword" name="keyword" aria-describedby="domain-help" placeholder="キーワードを入力してください">
+                    <small id="keyword-help" class="form-text text-muted">※複数ワードの場合は半角スペース区切りで入力してください</small>
                 </div>
-            </div>
+                <button type="button" class="btn btn-primary" onclick="requestSearch(); return false;">送信</button>
+            </form>
         </div>
     </div>
 </div>
