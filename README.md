@@ -1,5 +1,5 @@
 # laravel-google-check-tool
-## Installation
+## How to start
 
 ```:bash
 $ git clone https://github.com/daiki44/laravel-google-check-tool.git
